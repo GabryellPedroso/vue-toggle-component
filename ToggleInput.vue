@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: 'ToggleInput',
+  name: 'Toggle',
   
   props: {
     id: {
