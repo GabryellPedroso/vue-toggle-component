@@ -1,5 +1,5 @@
 <template lang="pug">
-  .toggle-input(:style="toggleInputStyle")
+  .toggle-component(:style="toggleComponentStyle")
     label(
       v-if="label"
       :style="labelStyle"
@@ -70,7 +70,7 @@ export default {
   },
 
   computed: {
-    toggleInputStyle() {
+    toggleComponentStyle() {
       switch (this.labelPosition) {
         case 'top':
           return `flex-flow: column`
@@ -152,7 +152,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .toggle-input {
+  .toggle-component {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
